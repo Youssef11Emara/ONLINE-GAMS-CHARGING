@@ -1,0 +1,281 @@
+:root {
+  --back1: #550c54;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Audiowide","Mada";
+    color: white;
+    transition: 0.5s;
+
+}
+header{
+  width: 100%;
+  /* position: fixed; */
+  z-index: 999;
+  background-color: var(--back1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  right: 0;
+  padding: 10px 40px;
+}
+header .logo a{
+  display: inline-block;
+  animation: logo 2s alternate infinite ease-out;
+}
+header .logo a:hover{
+  color: black;
+}
+header nav a{
+  padding-right: 10px;
+  font-size: 1.3em;
+}
+header nav a i:hover{
+  color: #ff00f7;
+  scale: 1.1;
+}
+.gams-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #1d1d1d;
+ 
+}
+.taskbar{
+  padding: 6px 0;
+  width: 250px;
+  flex-basis: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.gams-icon .im{
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px white solid;
+}
+.gams-icon .im img{
+  width: 100%;
+  height: 100%;
+}
+.gams-icon .im:hover{
+  scale: 1.1;
+}
+.gams-icon span{
+  text-align: center;
+}
+.gams-icon span a{
+  font-weight: bold;
+  animation: colorChange 1s infinite;
+  display: inline-block;
+}
+.gams-icon span a:hover{
+  color: white;
+  scale: 1.1;
+  animation: x 1s;
+}
+main{
+    height: 100vh;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header .logo{
+  font-size: 1.3em;
+}
+@keyframes colorChange {
+  0% {
+    color: #ff0101;
+  }
+  25% {
+    color: #0800ff;
+  }
+  50% {
+    color: #15f800;
+  }
+  75% {
+    color: #ffee00;
+  }
+  100% {
+    color: #ff0099;
+  }
+}
+@keyframes logo {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #e0b25c;
+  }
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  table-layout: fixed;
+  height: 100%;
+  
+}
+.container h1{
+  text-align: center;
+  color: black;
+}
+.container h2{
+  color: black;
+}
+.container ul li{
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 20px 0;
+  list-style: none;
+}
+.container .li-s{
+  color: #ac0ca6;
+}
+.box-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ic {
+  background-color: green;
+  color: black;
+  padding: 5px;
+  width: 65px;
+  height: 65px;
+  z-index: 999;
+  right: -25px;
+  bottom: 15%;
+  border-radius: 20%;
+  position: fixed;
+  opacity: 0.5;
+  overflow: hidden;
+  transition: .7s ease;
+}
+.ic:hover {
+  padding: 0 0;
+  right: 10px;
+  bottom: 15%;
+  border-radius: 50%;
+  opacity: 1;
+}
+.ic:hover a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ic a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.ic a i{
+  font-size: 2em;
+  color: white;
+ 
+}
+.ic a:hover i{
+  font-size: 50px;
+  margin: auto;
+  
+}
+section{
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto, minmax(80px, 1fr));
+  gap: 10px;
+  columns: 200px 2;
+  column-gap: 30px;
+  
+}
+
+section .card{
+  margin: 40px;
+  width: 360px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 10px 20px black;
+  /* filter: grayscale(100%); */
+}
+section .card:hover{
+  scale: 1.03;
+  filter: none;
+}
+#pubg{
+  background: url(../img/PUBG\ MOBILE.png);
+  background-size: cover;
+  background-position: 50% -50%;
+}
+#free{
+  background: url(../img/free.jpg);
+  background-size: cover;
+  background-position: 50% -50%;
+}
+#efoodball{
+  background: url(../img/efoodball.jpg);
+  background-size: cover;
+  background-position: 50% -50%;
+}
+ .card .title{
+  width: 100%;
+  padding: 10px;
+  background-color: #331632;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .card .title h3{
+  color: white;
+ }
+ .card .button a{
+  color: black;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 5px  12px white;
+ }
+ .card .button a:hover{
+  scale: 1.1;
+  background-color: #331632;
+  color: gold;
+  box-shadow: 10px 10px  12px white;
+ }
+ @media (max-width: 768px){
+  .gams-icon{
+    display: none;
+  }
+  header{
+    padding: 10px;
+  }
+  body{
+    font-size: 12px;
+  }
+  section .card{
+    height: 250px;
+  }
+  .container{
+    align-items: center;
+    justify-content: center;
+  }
+ }
